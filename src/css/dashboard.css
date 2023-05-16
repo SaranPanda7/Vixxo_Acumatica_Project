@@ -1,0 +1,71 @@
+.head {
+  height: 60px;
+  width: 100%;
+  background-color: #36ae93;
+}
+img {
+  background-color: #36ae93;
+}
+.head2 {
+  height: 560px;
+  background-color: #c5cecc;
+  width: 100%;
+  margin-top: 0.5px;
+}
+.head3 {
+  height: 50px;
+  width: 100%;
+  background-color: #36ae93;
+  margin-left: 0%;
+}
+p {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #b3d3cd;
+  margin-right: 150%;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+i {
+  size: 4cm;
+  color: #c5cecc;
+  padding-right: 40px;
+}
+.sub1 {
+  padding-top: 10px;
+}
+.sub {
+  display: flex;
+}
+h3 {
+  padding-top: 5px;
+  padding-left: 5px;
+  color: #c5cecc;
+}
+.head2 {
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: justify;
+}
+.collapse.in {
+  display: block;
+}
+i.fa-solid.fa-plus:not(.collapsed)::before {
+  content: "\f068";
+}
+/* i.fa-solid.fa-plus.collapsed:before{
+  content: "\f068";
+} */
+.table > tbody > tr > td[colspan="7"] {
+  padding: 0 !important;
+  border: 0;
+}
+
+/* table.table-bordered-2 > tbody > tr > td, 
+table.table-bordered-2 > thead > tr > th
+{
+  border: 1px solid #eee;
+  padding: 8px;
+} */

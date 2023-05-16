@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----------------- Horizontal Scrolling -------------------- */
+
+/* The heart of the matter */
+
+.horizontal-scrollable > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.horizontal-scrollable > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+}
+/* Decorations */
+
+.col-xs-4 {
+  color: white;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-top: 18px;
+}
+
+.col-xs-4:nth-child(2n + 1) {
+  background: green;
+}
+
+.col-xs-4:nth-child(2n + 2) {
+  background: black;
+}
+
+/* ----------------------- Div Horizonta Scroll ---------------------------- */
+span.read-or-hide {
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #0054a1;
+}
+div.scrollmenu {
+  overflow: auto;
+  max-width: calc(100% - 2em);
+  margin: auto;
+  max-height: 82vh;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  /* color: white; */
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  /* background-color: #777; */
+}
+
+/* ------------------------------------------------- */
+.table-striped-2 > tbody button {
+  position: relative;
+}
+.table-striped-2 > tbody button[data-csstooltip]::after {
+  font-size: 10px;
+  white-space: nowrap;
+  background-color: rgb(0 0 0 / 70%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px 4px;
+  border: 1px solid #333;
+}
+.table.table-bordered.table-striped-2.MuiTable-root > thead > tr > th {
+  background-color: #a5d4ff;
+}
+.table-striped-2 > tbody button[data-csstooltip]:hover::after {
+  content: attr(data-csstooltip);
+  transform: translate(20px, 10px);
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+.table-striped-2 > tbody > tr:nth-child(4n-1) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* .table-striped-2 > tbody > tr:nth-child(4n-1):hover > td {
+  background-color: rgba(0, 0, 0, 0.15);
+} */
+.table-striped-2 > tbody > tr:nth-child(2n) {
+  background-color: rgba(0, 83, 161, 0.05);
+}
+.table-striped-2
+  > tbody
+  > tr:nth-child(2n)
+  table
+  > thead.MuiTableHead-root
+  > tr {
+  background-color: rgba(0, 83, 161, 0.25);
+}
+
+.main-header {
+  background-color: #0054a1;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+#root > .App {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+.footer {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  background-color: #0054a1;
+  color: white;
+}
+
+.footer a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 10px;
+}
+/* .footer h4 {
+  color: white;
+  font-size: 20px;
+} */
+
+.modal-login {
+  min-height: 419px;
+}
+
+.header-user a {
+  color: white;
+  text-decoration: none;
+}
